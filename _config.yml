@@ -86,9 +86,12 @@ defaults:
 plugins:
   - jekyll-feed
   - jekyll-imagemagick
+  - jekyll-paginate-v2
   - jekyll-minifier
   - jekyll-sitemap
+  - jekyll-twitter-plugin
   - jekyll-email-protect
+  - jekyll-toc
   - jemoji
 
 # -----------------------------------------------------------------------------
