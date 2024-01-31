@@ -13,6 +13,7 @@ group :jekyll_plugins do
     gem 'jekyll-imagemagick'
     gem 'jekyll-minifier'
     gem 'jekyll-sitemap'
+    gem 'jekyll-email-protect'
     gem 'jemoji', '~> 0.12.0'
     gem 'unicode_utils'
 end

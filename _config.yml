@@ -7,12 +7,33 @@ url: https://vvcastro.github.io
 
 # Contact Info
 email: vicentejavier.castro@mail.polimi.it
+first_name: Vicente
+last_name: Castro Solar
 
-description: > # this means to ignore newlines until "baseurl:"
+description: >
   Academic page!
+footer_text: >
+  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 
-twitter_username: vvcastro_
+# -----------------------------------------------------------------------------
+# Accounts
+# -----------------------------------------------------------------------------
+x_username: vvcastro_
 github_username: vvcastro
+linkedin_username: vvcastros
+scholar_userid: # Google Scholar ID
+medium_username: # Medium username
+research_gate_profile: # ResearchGate
+stackoverflow_id: # StackOverflow
+
+contact_note: >
+  Feel free to reach out!
+
+# -----------------------------------------------------------------------------
+# General Settings
+# -----------------------------------------------------------------------------
+lang: en
 
 # Build settings
 markdown: kramdown
@@ -30,16 +51,22 @@ kramdown:
 
 # Exclude from processing.
 include: ["_pages"]
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - bin
+  - CONTRIBUTING.md
+  - CUSTOMIZE.md
+  - docker-compose.yml
+  - Dockerfile
+  - FAQ.md
+  - Gemfile
+  - Gemfile.lock
+  - INSTALL.md
+  - LICENSE
+  - package.json
+  - package-lock.json
+  - purgecss.config.js
+  - README.md
+  - vendor
 
 # Theme and design
 theme: minima
@@ -61,7 +88,23 @@ plugins:
   - jekyll-imagemagick
   - jekyll-minifier
   - jekyll-sitemap
+  - jekyll-email-protect
   - jemoji
+
+# -----------------------------------------------------------------------------
+# Collections
+# -----------------------------------------------------------------------------
+collections:
+  news:
+    defaults:
+      layout: post
+    output: true
+    permalink: /news/:path/
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+news_limit: 5
 
 # -----------------------------------------------------------------------------
 # Responsive WebP Images

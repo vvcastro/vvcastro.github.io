@@ -8,8 +8,7 @@
     {% include head.liquid %}
 </head>
 
-<body
-    class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+<body class="fixed-top-nav">
     
     {% include header.liquid %}
 
@@ -36,9 +35,7 @@
         {% endif %}
     </div>
 
-    <!-- Footer -->
-    {% include footer.liquid %}
-
+    
     <!-- JavaScripts -->
     {% include scripts/jquery.liquid %}
     {% include scripts/bootstrap.liquid %}
@@ -50,6 +47,9 @@
     {% include scripts/analytics.liquid %}
     {% include scripts/progressBar.liquid %}
     {% include scripts/wechatModal.liquid %}
+
+    <!-- Footer -->
+    {% include footer.liquid %}
 </body>
 
 </html>
