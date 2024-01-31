@@ -2,8 +2,8 @@ title: Vicente Castro
 
 # Hosting
 domain: vvcastro.github.io
-baseurl: "/"
-url: https://vvcastro.github.io
+baseurl: ""
+url: https://vvcastro.github.io/
 
 # Contact Info
 email: vicentejavier.castro@mail.polimi.it
