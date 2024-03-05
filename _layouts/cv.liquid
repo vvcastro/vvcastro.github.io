@@ -4,28 +4,31 @@ layout: default
 <div class="post">
     <header class="post-header">
         <h1 class="post-title">
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.last_name }}
+            {% if page.cv.doc %}
+                {% assign doc_path = page.cv.doc | prepend: 'assets/docs/' | prepend: site.baseurl | prepend: site.url %}
+                <a href={{doc_path}} title="CV"><i  class="fa fa-file-pdf"></i></a>
+            {% endif %}
+            <span class="font-weight-bold">Curriculum</span> Vitae
         </h1>
         <p class="desc">{{ page.subtitle }}</p>
     </header>
-
     <article>
         <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
+            {% if page.profile.image %}
             {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-
+    
             {% if page.profile.image_circular %}
-                {% assign profile_image_class = "img-fluid z-depth-1 rounded-circle" %}
+            {% assign profile_image_class = "img-fluid z-depth-1 rounded-circle" %}
             {% else %}
-                {% assign profile_image_class = "img-fluid z-depth-1 rounded" %}
+            {% assign profile_image_class = "img-fluid z-depth-1 rounded" %}
             {% endif %}
-        
+    
             {% include figure.liquid
-                path=profile_image_path
-                class=profile_image_class
-                alt=page.profile.image
+            path=profile_image_path
+            class=profile_image_class
+            alt=page.profile.image
             %}
-
+    
             <!-- Social -->
             <div class="more-info">
                 <div class="social">
@@ -34,20 +37,12 @@ layout: default
                     </div>
                 </div>
             </div>
-        
-        {% endif %}
+    
+            {% endif %}
         </div>
-
-        <div class="clearfix"> 
-            {{ content }} 
+    
+        <div class="clearfix">
+            {{ content }}
         </div>
-
-        <!-- News -->
-        {% if page.news %}
-        <h3>News</h3>
-        {% include micro/news.liquid limit=true %}
-        {% endif %}
-
-    </article>
 
 </div>

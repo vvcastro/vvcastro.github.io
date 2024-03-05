@@ -2,7 +2,7 @@ title: Vicente Castro
 
 # Hosting
 domain: vvcastro.github.io
-baseurl: ""
+baseurl: "/"
 url: https://vvcastro.github.io/
 
 # Contact Info
@@ -75,7 +75,7 @@ keep_files:
 theme: minima
 sass:
   style: compressed
-max_width: 800px
+max_width: 950px
 full-width: true
 
 # Sitemap settings

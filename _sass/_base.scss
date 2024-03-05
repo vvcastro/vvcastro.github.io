@@ -183,7 +183,7 @@ blockquote {
 
 @media (min-width: 576px) {
   .profile {
-    width: 30%;
+    width: 25%;
 
     .address {
       p {
@@ -199,6 +199,7 @@ blockquote {
 
   a {
     color: inherit;
+
 
     &:hover {
       color: var(--global-theme-color);
@@ -553,15 +554,15 @@ footer.sticky-bottom {
   .page-item {
     .page-link {
       color: var(--global-text-color);
-
+      
       &:hover {
-        color: $black-color;
-      }
+          color: $black-color;
+        }
     }
-
+    
     &.active .page-link {
-      color: $white-color;
-      background-color: var(--global-theme-color);
+        color: $white-color;
+        background-color: var(--global-theme-color);;
 
       &:hover {
         background-color: var(--global-theme-color);

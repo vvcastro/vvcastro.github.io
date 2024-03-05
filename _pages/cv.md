@@ -1,12 +1,20 @@
 ---
-layout: page
-title: cv
+layout: cv
+
+header: cv
 permalink: /cv/
-description: My personal resume!!
 
 nav: true
 nav_order: 3
 horizontal: false
+
+profile:
+  align: right
+  image: prof_pic.jpeg
+  image_circular: true
+
+cv:
+  doc: cv.pdf
 ---
 
-Research page!
+The attached file contains my most updated CV.
