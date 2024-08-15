@@ -2,6 +2,7 @@
 layout: cv
 
 header: cv
+title: cv
 permalink: /cv/
 
 nav: true
