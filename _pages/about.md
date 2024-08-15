@@ -20,4 +20,4 @@ I have two other research projects going on with the [iHealth Institute](https:/
 
 - Studying how **Meta-Learned Initialisations** affect the performance of _Implicit Neural Representations_ for MRI imaging. Through our method we reduced the training time by x6 factor. These and some other interesting results will be available in the **incoming paper**!
 
-- In a more recent project, we are proposing a method to extend a **Gaussian Splatting** method to the _K-Space_ (or Fourier Space). This allows us to perform a **joint optimisation over both domains**, improving performance and training times over previous method.
+- In a more recent project, we are proposing an extension of **Gaussian Splatting** for the _K-Space_ (or Fourier Space). This allows us to perform a **joint optimisation over both domains**, improving performance and training times over previous method.
