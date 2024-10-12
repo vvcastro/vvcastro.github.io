@@ -1,0 +1,16 @@
+<div class="research-topics">
+    {% for topic in site.research_topics %}
+    <h4>
+        <span class="font-weight-normal">{{ topic.title }}</span>
+    </h4>
+    
+    {% if topic.subtitle %}
+    <h6>
+        <span class="font-weight-light font-italic">{{ topic.subtitle }}</span>
+    </h6>
+    {% endif %}
+
+    {{ topic.content | remove: '<p>' | remove: '</p>' | emojify }}
+    <br>
+    {% endfor %}
+</div>

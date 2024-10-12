@@ -54,7 +54,7 @@ kramdown:
       start_line: 1
 
 # Exclude from processing.
-include: ["_pages"]
+include: ["_pages", "_publications", "_news"]
 exclude:
   - bin
   - CONTRIBUTING.md
@@ -109,9 +109,12 @@ collections:
       layout: post
     output: true
     permalink: /news/:path/
-  projects:
+
+  research_topics:
+    defaults:
+      layout: post
     output: true
-    permalink: /projects/:path/
+    permalink: /research_topics/:path/
 
 news_limit: 5
 
